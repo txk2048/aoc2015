@@ -53,10 +53,10 @@ function main() {
     .parseSync();
 
   Promise.all([loadInput(args.day), loadEntryPoint(args.day)])
-    .then(([inputData, entryPoint]) => {
-      const results = entryPoint(inputData);
-      console.log(`Part 1: ${results.part1}\nPart 2: ${results.part2}`);
-    })
+    .then(([inputData, entryPoint]) => entryPoint(inputData))
+    .then((results) =>
+      console.log(`Part 1: ${results.part1}\nPart 2: ${results.part2}`)
+    )
     .catch((reason: Error) => {
       console.error(`Error: ${reason.message}`);
       process.exitCode = 1;
