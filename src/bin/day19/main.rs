@@ -1,10 +1,5 @@
 mod parser;
 
-use std::{
-    collections::{HashSet, VecDeque},
-    iter::Map,
-};
-
 use clap::{command, Arg};
 use itertools::Itertools;
 
@@ -12,15 +7,6 @@ use itertools::Itertools;
 struct Replacement {
     from: String,
     to: String,
-}
-
-impl Replacement {
-    fn inverse(&self) -> Self {
-        Self {
-            from: self.to.clone(),
-            to: self.from.clone(),
-        }
-    }
 }
 
 fn all_replacements<'a>(
