@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Dagger",
+    "cost": 8,
+    "damage": 4,
+    "armor": 0
+  },
+  {
+    "name": "Shortsword",
+    "cost": 10,
+    "damage": 5,
+    "armor": 0
+  },
+  {
+    "name": "Warhammer",
+    "cost": 25,
+    "damage": 6,
+    "armor": 0
+  },
+  {
+    "name": "Longsword",
+    "cost": 40,
+    "damage": 7,
+    "armor": 0
+  },
+  {
+    "name": "Greataxe",
+    "cost": 74,
+    "damage": 8,
+    "armor": 0
+  }
+]
